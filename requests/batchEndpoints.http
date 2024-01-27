@@ -1,0 +1,38 @@
+GET http://localhost:3001/api/batch
+auth_token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1leWF6aGFnYW4ub2ZjbEBnbWFpbC5jb20iLCJpZCI6IjYxYmNiNzY5YmNmZmIzYmFlOWNiMDBjMCIsInByb2Nlc3MiOiJsb2dpbiIsInJvbGUiOiJTVFVERU5UIiwiaWF0IjoxNjM5NzU3OTE0LCJleHAiOjE2Mzk4NDQzMTR9.m9EzpDNOY104yJHVdIShqmTmqh70fK6HqYrWdIiLm2w
+
+###
+GET http://localhost:3001/api/batch/61b16732b6fc1fb61e4a79a6
+
+###
+POST http://localhost:3001/api/batch
+auth_token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1leWF6aGFnYW4ub2ZjbEBnbWFpbC5jb20iLCJpZCI6IjYxYmNiNzY5YmNmZmIzYmFlOWNiMDBjMCIsInByb2Nlc3MiOiJsb2dpbiIsInJvbGUiOiJTVFVERU5UIiwiaWF0IjoxNjM5NzU3OTE0LCJleHAiOjE2Mzk4NDQzMTR9.m9EzpDNOY104yJHVdIShqmTmqh70fK6HqYrWdIiLm2w
+Content-Type: application/json
+
+{
+    "name":"B261",
+    "courseTitle":"full stack"
+}
+###
+POST http://localhost:3001/api/batch
+Content-Type: application/json
+
+{
+    "name":"B261",
+    "courseTitle":"full stack",
+    "startDate":"2023-12-10"
+}
+###
+PUT http://localhost:3001/api/batch/61b16732b6fc1fb61e4a79a6
+Content-Type: application/json
+
+{
+    "name":"B261",
+    "courseTitle":"full stack",
+    "startDate":"2023-12-10",
+    "endDate":"2024-1-16"
+}
+
+
+###
+DELETE  http://localhost:3001/api/batch/61b167b7b6fc1fb61e4a79ac

@@ -1,0 +1,51 @@
+GET http://localhost:3001/api/query
+auth_token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1leWF6aGFnYW4ub2ZjbEBnbWFpbC5jb20iLCJpZCI6IjYxYmNiNzY5YmNmZmIzYmFlOWNiMDBjMCIsInByb2Nlc3MiOiJsb2dpbiIsInJvbGUiOiJTVFVERU5UIiwiaWF0IjoxNjM5NzU3OTE0LCJleHAiOjE2Mzk4NDQzMTR9.m9EzpDNOY104yJHVdIShqmTmqh70fK6HqYrWdIiLm2w
+
+###
+GET http://localhost:3001/api/query
+auth_token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1leWF6aGFnYW4ub2ZjbEBnbWFpbC5jb20iLCJpZCI6IjYxYmNiNzY5YmNmZmIzYmFlOWNiMDBjMCIsInByb2Nlc3MiOiJsb2dpbiIsInJvbGUiOiJTVFVERU5UIiwiaWF0IjoxNjM5NzU3OTE0LCJleHAiOjE2Mzk4NDQzMTR9.m9EzpDNOY104yJHVdIShqmTmqh70fK6HqYrWdIiLm2w
+
+###
+GET http://localhost:3001/api/query/61b18ceaa181f479fb8748eb
+
+###
+POST http://localhost:3001/api/query
+auth_token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1leWF6aGFnYW4ub2ZjbEBnbWFpbC5jb20iLCJpZCI6IjYxYmNiNzY5YmNmZmIzYmFlOWNiMDBjMCIsInByb2Nlc3MiOiJsb2dpbiIsInJvbGUiOiJTVFVERU5UIiwiaWF0IjoxNjM5NzU3OTE0LCJleHAiOjE2Mzk4NDQzMTR9.m9EzpDNOY104yJHVdIShqmTmqh70fK6HqYrWdIiLm2w
+Content-Type: application/json
+
+{
+     "title": "title",
+    "subTitle": "sub title",
+    "category": ["js"],
+    "subCategory": [],
+    "description": "description",
+    "tags": ["front end"],
+    "availableTime": {
+        "from":"09:00:00",
+        "till":"06:00:00"
+    }
+}
+###
+PUT http://localhost:3001/api/query/61b18ceaa181f479fb8748eb
+Content-Type: application/json
+
+{
+     "title": "updated title",
+    "subTitle": "updated sub title",
+    "category": ["js"],
+    "subCategory": [],
+    "description": "description",
+    "tags": ["front end"],
+    "availableTime": {
+        "start":"09:00:00",
+        "end":"06:00:00"
+    },
+    "contactInfo":{
+        "email":"tamil.kani56@gmail.com",
+        "phone":"1234557890"
+    },
+    "rasiedBy": "61b0b7f51cb23e5af97f1724"
+}
+
+###
+DELETE http://localhost:3000/api/query/61b18d7ea181f479fb8748f5

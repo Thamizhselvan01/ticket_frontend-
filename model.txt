@@ -1,0 +1,42 @@
+user
+    role
+    first name
+    last name
+    email
+    password
+    address
+
+batch
+    name
+    course name
+    start date
+    end date
+
+query
+    title
+    sub title
+    category
+    sub category
+    description
+    tags
+    available time
+    contact info
+    query rasied by
+    query assigned to
+    converstation id
+
+converstation
+    users id
+    messagesID []
+
+message
+    user
+    content
+    time
+
+dashboard
+    queries rasied in a day - daily report
+    queries unassiged
+    queries resolved
+
+

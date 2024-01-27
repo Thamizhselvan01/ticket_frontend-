@@ -1,0 +1,35 @@
+POST  http://localhost:3001/api/user/register
+Content-Type: application/json
+
+{
+    "firstName":"New Name",
+    "lastName":"C N",
+    "email":"tamil.kani56@gmail.com",
+    "password":"12345",
+    "conformPassword":"12345",
+    "address":{
+        "street":"123",
+        "city":"12"
+    }
+}
+
+###
+PATCH  http://localhost:3001/api/user/update/61b0b7f51cb23e5af97f1724
+Content-Type: application/json
+
+{
+    "firstName":"Thamizhi",
+    "lastName":"C N",
+    "address":{
+        "street":"123",
+        "city":"12"
+    }
+}
+
+###
+DELETE   http://localhost:3001/api/user/delete/61bc6e4a717021273af2211c
+
+###
+GET http://localhost:3001/api/user
+###
+GET http://localhost:3001/api/user/61bc21fa820d975539d1c8e4

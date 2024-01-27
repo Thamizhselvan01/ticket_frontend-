@@ -1,0 +1,7 @@
+PATCH http://localhost:3001/api/assign/query/many
+auth_token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1leWF6aGFnYW4ub2ZjbEBnbWFpbC5jb20iLCJpZCI6IjYxYmNiNzY5YmNmZmIzYmFlOWNiMDBjMCIsInByb2Nlc3MiOiJsb2dpbiIsInJvbGUiOiJTVFVERU5UIiwiaWF0IjoxNjM5NzU3OTE0LCJleHAiOjE2Mzk4NDQzMTR9.m9EzpDNOY104yJHVdIShqmTmqh70fK6HqYrWdIiLm2w
+Content-Type: application/json
+
+{
+    "queryIds":["61bd8ea98c73dd48934b55e9"]
+}

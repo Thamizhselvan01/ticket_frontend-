@@ -1,0 +1,43 @@
+GET http://localhost:3001/api/auth/verify-activation/57eb70956eda58856c89c18167c61fcbf2600c5d7649d278ca9be50cdd38542205c5bc0aca3ff489ed36df1c59ab54f466b8
+
+
+###
+POST http://localhost:3001/api/auth/login
+Content-Type: application/json
+
+{
+    "email":"tamil.kani56@gmail.com",
+    "password": "12345"
+}
+###
+POST http://localhost:3001/api/auth/forgot-password
+Content-Type: application/json
+
+{
+    "email":"tamil.kani56@gmail.com"
+}
+###
+POST http://localhost:3001/api/auth/reset-password/fc41022c7a71de31a94148fa88307163a10af4cb6e2f41604b1c684c14cfb42e41eba82cd92502b15d39a17404ede589d17e
+Content-Type: application/json
+
+{
+    "password":"123455",
+    "conformPassword":"123455"
+}
+
+###
+POST http://localhost:3001/api/auth/login
+Content-Type: application/json
+
+{
+    "email":"tamil.kani56@gmail.com",
+    "password": "123455"
+}
+
+###
+POST http://localhost:3001/api/auth/resend-activation
+Content-Type: application/json
+
+{
+    "email":"tamil.kani56@gmail.com"
+}
